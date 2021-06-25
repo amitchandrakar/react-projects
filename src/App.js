@@ -1,13 +1,19 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import BMICalculator from './Component/BMICalculator/BMICalculator';
+// import Budget from './Component/Budget/Budget';
 import Calculator from './Component/Calculator/Calculator';
-import Home from './Component/Home';
+import EmpList from './Component/EmployeeCRUD/EmpList';
 
 function App() {
   return (
     <div>
-      <Calculator />
-      <BMICalculator />
+      {/* <Calculator /> */}
+      {/* <BMICalculator /> */}
+      {/* <Budget /> */}
+
+      <EmpList />
+
     </div>
   );
 }

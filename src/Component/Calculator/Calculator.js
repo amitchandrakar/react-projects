@@ -37,7 +37,7 @@ function Calculator(props) {
     }
 
     let handleClick = (val) => {
-        input = input == 0 ? '' : input;
+        input = input === 0 ? '' : input;
 
         let newValue = input + val;
         setInput(newValue);
