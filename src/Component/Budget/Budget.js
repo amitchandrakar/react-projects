@@ -1,10 +1,13 @@
 import React from 'react';
 import {Container, Row, Col, Jumbotron, Form, Button} from 'react-bootstrap';
 import '../Budget/style.css';
+import Menubar from '../Menubar';
 
 function Budget() {
     return (
        <>
+       <Menubar />
+       
         <Container>
           <Row>
             <Col>

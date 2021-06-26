@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from "./Button";
 import { evaluate } from 'mathjs';
+import Menubar from '../Menubar';
 
 function Calculator(props) {
 
@@ -52,6 +53,10 @@ function Calculator(props) {
     }
 
     return (
+
+        <>
+        <Menubar />
+        
         <div style={styles.app}>
         <div style={styles.calcWrapper}>
         <div className="input">{input}</div>
@@ -86,6 +91,8 @@ function Calculator(props) {
           </div>
         </div>
       </div>
+
+      </>
     );
 }
 

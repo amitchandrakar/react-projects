@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {Container, Row, Col, Form, Button, Table} from 'react-bootstrap';
 import { evaluate } from 'mathjs';
-
+import Menubar from '../Menubar';
 
 function BMICalculator() {
 
@@ -54,12 +54,14 @@ function BMICalculator() {
             marginTop: '15px'
         },
         ml2: {
-            marginLeft: '5px'
+            marginLeft: '15px'
         }
     }
 
     return (
         <>
+        <Menubar />
+        
         <Container style={styles.mt}>
             <Row>
                 <Col lg={6}>
@@ -84,7 +86,7 @@ function BMICalculator() {
                         <Button variant="primary" type="submit" style={styles.mt2} onClick={ handleCalculate }>
                             Calculate
                         </Button>
-                        <Button style={styles.ml2} variant="danger" type="button" onClick={ handleClear }>
+                        <Button style={styles.ml2, styles.mt2} variant="danger" type="button" onClick={ handleClear }>
                             Clear
                         </Button>
                     </Form>

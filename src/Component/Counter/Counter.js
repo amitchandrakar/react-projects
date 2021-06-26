@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {Container, Row, Col, Form, Button} from 'react-bootstrap';
+import Menubar from '../Menubar';
 
 function Counter(props) {
 
@@ -29,6 +30,7 @@ function Counter(props) {
 
     return (
         <>
+            <Menubar />
             <Container>
                 <Row style={styles.mt}>
                     <Col style={styles.center}>
