@@ -86,7 +86,7 @@ function BMICalculator() {
                         <Button variant="primary" type="submit" style={styles.mt2} onClick={ handleCalculate }>
                             Calculate
                         </Button>
-                        <Button style={styles.ml2, styles.mt2} variant="danger" type="button" onClick={ handleClear }>
+                        <Button style={styles.ml2} variant="danger" type="button" onClick={ handleClear }>
                             Clear
                         </Button>
                     </Form>

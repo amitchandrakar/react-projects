@@ -20,14 +20,14 @@ function EmpEdit() {
     const { id } = useParams();
     let history = useHistory();
 
-    useEffect(()=>{
-        loadData();
-    },[]);
-
     const loadData = async () => {
         let result = await axios.get(`http://localhost:3003/users/${id}`);
         setUserData(result.data);
     }
+
+    useEffect(() => {
+        loadData()
+    }, []);
 
     const handleInput = (e) => {
         setUserData({...userData, [e.target.name]: e.target.value});
