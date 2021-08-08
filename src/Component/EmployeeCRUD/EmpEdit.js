@@ -26,7 +26,7 @@ function EmpEdit() {
     }
 
     useEffect(() => {
-        loadData()
+        loadData(); // eslint-disable-line no-use-before-define
     }, []);
 
     const handleInput = (e) => {

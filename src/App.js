@@ -14,12 +14,13 @@ import Counter from "./Component/Counter/Counter";
 import Calculator from "./Component/Calculator/Calculator";
 import BMICalculator from "./Component/BMICalculator/BMICalculator";
 import Budget from "./Component/Budget/Budget";
+import Datatable from "./Component/Datatable/Datatable";
 
 function App() {
   return (
     <>
-
-      <Router>
+      <Datatable />
+      {/* <Router>
         <Switch>
 
           <Route path="/counter">
@@ -48,7 +49,7 @@ function App() {
           </Route>
 
         </Switch>
-      </Router>
+      </Router> */}
 
     </>
   );
