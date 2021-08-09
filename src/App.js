@@ -14,13 +14,16 @@ import Counter from "./Component/Counter/Counter";
 import Calculator from "./Component/Calculator/Calculator";
 import BMICalculator from "./Component/BMICalculator/BMICalculator";
 import Budget from "./Component/Budget/Budget";
-import Datatable from "./Component/Datatable/Datatable";
+import Datatable from "./Component/Datatable2/Datatable";
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
     <>
-      <Datatable />
-      {/* <Router>
+      {/* <Datatable /> */}
+      <Router>
         <Switch>
 
           <Route path="/counter">
@@ -49,7 +52,12 @@ function App() {
           </Route>
 
         </Switch>
-      </Router> */}
+      </Router>
+
+      <ToastContainer />
+
+      
+
 
     </>
   );

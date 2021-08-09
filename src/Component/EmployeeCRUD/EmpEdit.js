@@ -21,7 +21,7 @@ function EmpEdit() {
     let history = useHistory();
 
     const loadData = async () => {
-        let result = await axios.get(`http://localhost:3003/users/${id}`);
+        let result = await axios.get(`http://localhost:3005/users/${id}`);
         setUserData(result.data);
     }
 

@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useHistory } from "react-router-dom";
 
+import { toast } from 'react-toastify';
+
+
 
 function EmpCreate() {
 
@@ -27,7 +30,10 @@ function EmpCreate() {
 
     const handleSubmit = async e => {
         e.preventDefault();
-        await axios.post('http://localhost:3003/users', userData);
+
+        await axios.post('http://localhost:8000/users', userData);
+        
+        toast.success("Success...! User Added.");
         history.push("/list");
     }
 
@@ -78,6 +84,7 @@ function EmpCreate() {
                     </Col>
                 </Row>
             </Container>
+
         
         </>
     );
