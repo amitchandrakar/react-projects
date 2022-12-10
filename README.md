@@ -2,12 +2,12 @@
 
 <p>This is a sample react application which has several small level app to medium level apps. The main purpose of this repo is to showcase my react js skills.</p>
 
-##### Table of Content
+# Table of Content
 
 <table>
     <thead>
         <tr>
-            <th>Sample React Applications (Beginner to Advanced)</th>
+            <th colspan="6">Sample React Applications (Beginner to Advanced)</th>
         </tr>
         <tr>
             <th>#</th>
@@ -15,6 +15,11 @@
             <th>Description</th>
             <th>Status</th>
             <th>Difficulty Level</th>
+            <td className="text-right">
+                <Link to="/counter">
+                    <Button variation="warning">View Demo</Button>
+                </Link>
+            </td>
         </tr>
     </thead>
     <tbody>
