@@ -6,26 +6,24 @@ import {
   Route
 } from "react-router-dom";
 
-import EmpList from './Component/EmployeeCRUD/EmpList';
-import EmpCreate from './Component/EmployeeCRUD/EmpCreate';
-import EmpEdit from './Component/EmployeeCRUD/EmpEdit';
+import EmpList from './Component/Employees/EmpList';
+import EmpCreate from './Component/Employees/EmpCreate';
+import EmpEdit from './Component/Employees/EmpEdit';
 import TableOfContent from "./TableOfContent";
 import Counter from "./Component/Counter/Counter";
 import Calculator from "./Component/Calculator/Calculator";
 import BMICalculator from "./Component/BMICalculator/BMICalculator";
 import Budget from "./Component/Budget/Budget";
-import Datatable from "./Component/Datatable2/Datatable";
-
-import { ToastContainer, toast } from 'react-toastify';
+import Elements from "./Component/Forms/Elements";
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
     <>
-      {/* <Datatable /> */}
+      {/* <Elements /> */}
       <Router>
         <Switch>
-
           <Route path="/counter">
             <Counter />
           </Route>
@@ -55,10 +53,6 @@ function App() {
       </Router>
 
       <ToastContainer />
-
-      
-
-
     </>
   );
 }

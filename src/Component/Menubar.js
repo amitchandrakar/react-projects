@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 function Menubar() {
     return (
         <>
-          
             <Navbar bg="dark" variant="dark">
                 <Navbar.Brand as={Link} to="/">Home Page</Navbar.Brand>
 
@@ -25,7 +24,6 @@ function Menubar() {
                     <Nav.Link as={Link} to="/list">Users CRUD App</Nav.Link>
                 </Nav>
             </Navbar>
-
         </>
     );
 }

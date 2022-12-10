@@ -1,62 +1,6 @@
 {
   "users": [
     {
-      "name": "Jermaine Berger",
-      "username": "ledebum",
-      "email": "hahubatecu@mailinator.com",
-      "phone": "53",
-      "id": 13
-    },
-    {
-      "name": "Buffy Tanner",
-      "username": "qohono",
-      "email": "benoxytuh@mailinator.com",
-      "phone": "96",
-      "id": 14
-    },
-    {
-      "name": "Jackson Morrison",
-      "username": "hawyh",
-      "email": "lulymomeci@mailinator.com",
-      "phone": "100",
-      "id": 15
-    },
-    {
-      "name": "Reuben Mullen",
-      "username": "bepysurop",
-      "email": "lorepibo@mailinator.com",
-      "phone": "58",
-      "id": 16
-    },
-    {
-      "name": "Hilda Glass",
-      "username": "syzacidihy",
-      "email": "nilyvi@mailinator.com",
-      "phone": "46",
-      "id": 17
-    },
-    {
-      "name": "Ginger Dorsey",
-      "username": "narebona",
-      "email": "kogikedu@mailinator.com",
-      "phone": "24",
-      "id": 18
-    },
-    {
-      "name": "Alana Levine",
-      "username": "bahogetud",
-      "email": "gizubu@mailinator.com",
-      "phone": "85",
-      "id": 19
-    },
-    {
-      "name": "Lee Watts",
-      "username": "dapih",
-      "email": "xewex@mailinator.com",
-      "phone": "91",
-      "id": 20
-    },
-    {
       "name": "Brynn Knight",
       "username": "sowobyvoqi",
       "email": "xagyxow@mailinator.com",
@@ -153,13 +97,6 @@
       "email": "sufi@mailinator.com",
       "phone": "8",
       "id": 34
-    },
-    {
-      "name": "Talon Weiss",
-      "username": "votiqib",
-      "email": "qasomic@mailinator.com",
-      "phone": "33",
-      "id": 35
     }
   ]
 }
