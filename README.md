@@ -15,11 +15,6 @@
             <th>Description</th>
             <th>Status</th>
             <th>Difficulty Level</th>
-            <td className="text-right">
-                <Link to="/counter">
-                    <Button variation="warning">View Demo</Button>
-                </Link>
-            </td>
         </tr>
     </thead>
     <tbody>
