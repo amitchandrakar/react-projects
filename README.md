@@ -1,6 +1,6 @@
 # Introduction
 
-<p>This is a sample react application which has several small level app to medium level apps. The main purpose of this repo is to showcase my react js skills.</p>
+<p>This is a sample react application that has several small-level apps to medium-level apps. The main purpose of this repo is to showcase my react js skills.</p>
 
 # Table of Content
 
@@ -160,12 +160,12 @@
 </ol>
 
 
-# How to run project
+# How to run the project?
 
 <li>
-    We need to run these 2 command in separate terminal windows - <code>npm start</code> and <code>npm json-server</code> because
+    We need to run these 2 commands in separate terminal windows - <code>npm start</code> and <code>npm json-server</code> because
     json server has been used instead of real api's.
 </li>
 <li>
-    Browse http://localhost:3000 for project
+    Browse <code>http://localhost:3000</code> for project
 </li>
