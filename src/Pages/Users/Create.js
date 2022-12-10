@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {Container, Row, Col, Form, Button} from 'react-bootstrap';
 import Menubar from '../Menubar';
 import { Link } from "react-router-dom";
@@ -31,6 +31,10 @@ export function Create()
         toast.success("Success...! User Added.");
         history.push("/list");
     }
+
+    useEffect(() => {
+        document.title = 'Create new user';
+    }, []);
 
     return (
         <>

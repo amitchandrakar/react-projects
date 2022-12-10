@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Container, Row, Col, Form, Button, Table} from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
-function TableOfContent() {
+function TableOfContent() 
+{
+
+    useEffect(() => {
+        document.title = 'Table of contents';
+    }, []);
+
     return (
         <>
-
             <Container className="mt-5">
-
                 <Row>
                     <Col>
                         <Form>
@@ -187,7 +191,6 @@ function TableOfContent() {
                     </Col>
                 </Row>
             </Container>
-
         </>
     );
 }

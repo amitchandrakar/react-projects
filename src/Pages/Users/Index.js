@@ -28,6 +28,7 @@ export function Index()
     }
 
     useEffect(() => {
+        document.title = 'Users List';
         loadUsers();
     }, []);
 
@@ -93,7 +94,7 @@ export function Index()
                     <Col>
                         <Link to="/create" >
                             <Button type="button" variant="primary" className="mt-2 mr-2 mb-2">
-                                Create Employee
+                                Create User
                             </Button>
                         </Link>
                         

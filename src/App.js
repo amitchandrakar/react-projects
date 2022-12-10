@@ -6,9 +6,9 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import {Index as EmployeeIndex} from './Pages/Employees/Index';
-import { Create as EmployeeCreate} from './Pages/Employees/Create';
-import {Edit as EmployeeEdit} from './Pages/Employees/Edit';
+import {Index as UserIndex} from './Pages/Users/Index';
+import { Create as UserCreate} from './Pages/Users/Create';
+import {Edit as UserEdit} from './Pages/Users/Edit';
 import TableOfContent from "./Pages/TableOfContent";
 import Counter from "./Pages/Counter/Counter";
 import Calculator from "./Pages/Calculator/Calculator";
@@ -16,9 +16,12 @@ import BMICalculator from "./Pages/BMICalculator/BMICalculator";
 import Budget from "./Pages/Budget/Budget";
 import { ToastContainer } from 'react-toastify';
 import Elements from "./Pages/Forms/Elements";
+import React, { useEffect } from 'react';
+
 
 function App() 
 {
+
   return (
     <>
       <Router>
@@ -39,13 +42,13 @@ function App()
             <Budget />
           </Route>
           <Route path="/list">
-            <EmployeeIndex />
+            <UserIndex />
           </Route>
           <Route path="/create">
-            <EmployeeCreate />
+            <UserCreate />
           </Route>
           <Route path="/edit/:id">
-            <EmployeeEdit />
+            <UserEdit />
           </Route>
           <Route path="/">
             <TableOfContent />

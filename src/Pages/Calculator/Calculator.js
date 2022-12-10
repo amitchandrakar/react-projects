@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from "./Button";
 import { evaluate } from 'mathjs';
 import Menubar from '../Menubar';
@@ -51,6 +51,10 @@ function Calculator(props) {
     let clearAll = () => {
         setInput(0);
     }
+
+    useEffect(() => {
+      document.title = 'Calculator App';
+    }, []);
 
     return (
 

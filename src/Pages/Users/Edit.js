@@ -26,6 +26,7 @@ export function Edit()
     }
 
     useEffect(() => {
+        document.title = 'Edit user';
         loadData();
     });
 

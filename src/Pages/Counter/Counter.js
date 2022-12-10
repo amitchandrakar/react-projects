@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {Container, Row, Col, Form, Button} from 'react-bootstrap';
 import Menubar from '../Menubar';
 
@@ -27,6 +27,10 @@ function Counter(props) {
             marginTop: '30px'
         }
     }
+
+    useEffect(() => {
+        document.title = 'Counter App';
+    }, []);
 
     return (
         <>

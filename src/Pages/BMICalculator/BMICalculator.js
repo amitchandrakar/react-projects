@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {Container, Row, Col, Form, Button, Table} from 'react-bootstrap';
 import { evaluate } from 'mathjs';
 import Menubar from '../Menubar';
@@ -57,6 +57,10 @@ function BMICalculator() {
             marginLeft: '15px'
         }
     }
+
+    useEffect(() => {
+        document.title = 'BMI Calculator';
+    }, []);
 
     return (
         <>
