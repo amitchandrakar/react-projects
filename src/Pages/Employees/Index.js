@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import {Container, Row, Col, Button, Modal} from 'react-bootstrap';
-import '../Employees/style.css';
 import Menubar from '../Menubar';
 import { Link, useHistory } from "react-router-dom";
 import Swal from 'sweetalert2';
@@ -12,8 +11,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.css';
 import paginationFactory from 'react-bootstrap-table2-paginator';
 import 'react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css';
+import { Constants } from "../../constants";
 
-function EmpList()
+export function Index()
 {
     const [users, setUsers] = useState([]);
     const [show, setShow] = useState(false);
@@ -23,7 +23,7 @@ function EmpList()
     const history = useHistory();
 
     const loadUsers = async () => {
-        const result = await axios.get("http://localhost:8000/users");
+        const result = await axios.get(`${Constants.api_base_url}/users`);
         setUsers(result.data);
     }
 
@@ -78,7 +78,7 @@ function EmpList()
             confirmButtonText: 'Yes, delete it!'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    axios.delete(`http://localhost:8000/users/${id}`);
+                    axios.delete(`${Constants.api_base_url}/users/${id}`);
                     loadUsers();
                     toast.success("Success...! User Deleted.");
                 }
@@ -126,5 +126,3 @@ function EmpList()
         </>
     );
 }
-
-export default EmpList;

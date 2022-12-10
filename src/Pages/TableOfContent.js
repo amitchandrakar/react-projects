@@ -14,7 +14,7 @@ function TableOfContent() {
                             <Table striped bordered hover>
                                 <thead>
                                     <tr>
-                                        <th colspan="6" className="text-center bg-dark text-white">Sample React Applications (Beginner to Advanced)</th>
+                                        <th colSpan="6" className="text-center bg-dark text-white">Sample React Applications (Beginner to Advanced)</th>
                                     </tr>
                                     <tr>
                                         <th>#</th>

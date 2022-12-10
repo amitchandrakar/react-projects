@@ -1,29 +1,31 @@
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Assets/Css/style.css';
+import 'react-toastify/dist/ReactToastify.css';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
-
-import EmpList from './Component/Employees/EmpList';
-import EmpCreate from './Component/Employees/EmpCreate';
-import EmpEdit from './Component/Employees/EmpEdit';
-import TableOfContent from "./TableOfContent";
-import Counter from "./Component/Counter/Counter";
-import Calculator from "./Component/Calculator/Calculator";
-import BMICalculator from "./Component/BMICalculator/BMICalculator";
-import Budget from "./Component/Budget/Budget";
-import Elements from "./Component/Forms/Elements";
+import {Index as EmployeeIndex} from './Pages/Employees/Index';
+import { Create as EmployeeCreate} from './Pages/Employees/Create';
+import {Edit as EmployeeEdit} from './Pages/Employees/Edit';
+import TableOfContent from "./Pages/TableOfContent";
+import Counter from "./Pages/Counter/Counter";
+import Calculator from "./Pages/Calculator/Calculator";
+import BMICalculator from "./Pages/BMICalculator/BMICalculator";
+import Budget from "./Pages/Budget/Budget";
 import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import Elements from "./Pages/Forms/Elements";
 
-function App() {
+function App() 
+{
   return (
     <>
-      {/* <Elements /> */}
       <Router>
         <Switch>
+          <Route path="/elements">
+            <Elements />
+          </Route>
           <Route path="/counter">
             <Counter />
           </Route>
@@ -37,13 +39,13 @@ function App() {
             <Budget />
           </Route>
           <Route path="/list">
-            <EmpList />
+            <EmployeeIndex />
           </Route>
           <Route path="/create">
-            <EmpCreate />
+            <EmployeeCreate />
           </Route>
           <Route path="/edit/:id">
-            <EmpEdit />
+            <EmployeeEdit />
           </Route>
           <Route path="/">
             <TableOfContent />
