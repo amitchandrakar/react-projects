@@ -12,6 +12,7 @@ import 'react-bootstrap-table-next/dist/react-bootstrap-table2.css';
 import paginationFactory from 'react-bootstrap-table2-paginator';
 import 'react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css';
 import { Constants } from "../../constants";
+import ToolkitProvider, { Search, CSVExport } from 'react-bootstrap-table2-toolkit';
 
 export function Index()
 {
@@ -21,6 +22,8 @@ export function Index()
     const handleShow = () => setShow(true);
     const MySwal = withReactContent(Swal);
     const history = useHistory();
+    const { SearchBar, ClearSearchButton } = Search;
+    const { ExportCSVButton } = CSVExport;
 
     const loadUsers = async () => {
         const result = await axios.get(`${Constants.api_base_url}/users`);
@@ -46,7 +49,7 @@ export function Index()
         { dataField: 'username', text: 'Username', sort: true },
         { dataField: 'email', text: 'Email Id', sort: true },
         { dataField: 'phone', text: 'Phone', sort: true },
-        { dataField: 'action', text: 'Action', sort: false, formatter: actionsFormatter },
+        { dataField: 'action', text: 'Action', sort: false, formatter: actionsFormatter, csvExport: false },
     ];
 
     const pagination = paginationFactory({
@@ -97,14 +100,28 @@ export function Index()
                                 Create User
                             </Button>
                         </Link>
-                        
-                        <BootstrapTable
-                            bootstrap4
-                            keyField='id'
-                            columns={columns}
+
+                        <ToolkitProvider
+                            keyField="id"
                             data={users}
-                            pagination={pagination}
-                        />
+                            columns={columns}
+                            search
+                            exportCSV
+                        >
+                            {
+                                props => (
+                                    <div>
+                                        <SearchBar {...props.searchProps} />
+                                        <ClearSearchButton {...props.searchProps} />
+                                        <ExportCSVButton {...props.csvProps} className="btn btn-dark">Export</ExportCSVButton>
+                                        <BootstrapTable pagination={pagination}
+                                            {...props.baseProps}
+                                        />
+                                    </div>
+                                )
+                            }
+                        </ToolkitProvider>
+
                     </Col>
                 </Row>
             </Container>

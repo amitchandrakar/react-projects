@@ -105,12 +105,14 @@ function TableOfContent()
                                         <td>6</td>
                                         <td>React Datatable</td>
                                         <td>Will implement Datatable here</td>
-                                        <td>Planned</td>
+                                        <td>Completed</td>
                                         <td>
                                             🤫
                                         </td>
                                         <td className="text-right">
-                                            <Button variation="warning">Coming Soon</Button>
+                                            <Link to="/list">
+                                                <Button variation="warning">View Demo</Button>
+                                            </Link>
                                         </td>
                                     </tr>
                                     <tr>

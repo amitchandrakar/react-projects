@@ -67,9 +67,9 @@
             <td>6</td>
             <td>React Datatable</td>
             <td>Will implement Datatable here</td>
-            <td>Planned</td>
+            <td>Completed</td>
             <td>
-                🤫
+                3.5/10 🤓
             </td>
         </tr>
         <tr>
