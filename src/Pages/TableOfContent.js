@@ -35,7 +35,7 @@ function TableOfContent()
                                         <td>1</td>
                                         <td>Simple Counter App</td>
                                         <td>This was my first react task project</td>
-                                        <td>Completed</td>
+                                        <td><span className="text-success">Completed</span></td>
                                         <td>
                                             0.1/10 😅
                                         </td>
@@ -49,7 +49,7 @@ function TableOfContent()
                                         <td>2</td>
                                         <td>Calculator App</td>
                                         <td>A calculator with all basic functionalities</td>
-                                        <td>Completed</td>
+                                        <td><span className="text-success">Completed</span></td>
                                         <td>
                                             2/10
                                         </td>
@@ -63,7 +63,7 @@ function TableOfContent()
                                         <td>3</td>
                                         <td>BMI calculator</td>
                                         <td>works on Metric and Imperial as well</td>
-                                        <td>Completed</td>
+                                        <td><span className="text-success">Completed</span></td>
                                         <td>
                                             2.5/10
                                         </td>
@@ -77,7 +77,7 @@ function TableOfContent()
                                         <td>4</td>
                                         <td>Budget App</td>
                                         <td>I'm storing date, price and description here</td>
-                                        <td>In Progress</td>
+                                        <td><span className="text-warning">In Progress</span></td>
                                         <td>
                                             3/10
                                         </td>
@@ -91,7 +91,7 @@ function TableOfContent()
                                         <td>5</td>
                                         <td>Users CRUD</td>
                                         <td>I've used fake json-server here as database and performing all operations there</td>
-                                        <td>Completed</td>
+                                        <td><span className="text-success">Completed</span></td>
                                         <td>
                                             3.4/10 🤓
                                         </td>
@@ -105,9 +105,9 @@ function TableOfContent()
                                         <td>6</td>
                                         <td>React Datatable</td>
                                         <td>Will implement Datatable here</td>
-                                        <td>Completed</td>
+                                        <td><span className="text-success">Completed</span></td>
                                         <td>
-                                            🤫
+                                            3.5/10 🤓
                                         </td>
                                         <td className="text-right">
                                             <Link to="/list">
@@ -119,7 +119,7 @@ function TableOfContent()
                                         <td>7</td>
                                         <td>Form Repeater</td>
                                         <td>Will implement something like <b>"ADD MORE"</b> on form fields</td>
-                                        <td>Planned</td>
+                                        <td><span className="text-danger">Planned</span></td>
                                         <td>
                                             🤫
                                         </td>
@@ -131,7 +131,7 @@ function TableOfContent()
                                         <td>8</td>
                                         <td>Login & Register forms with validation</td>
                                         <td>It will be same as real one</td>
-                                        <td>Planned</td>
+                                        <td><span className="text-danger">Planned</span></td>
                                         <td>
                                             🤫
                                         </td>
@@ -143,7 +143,7 @@ function TableOfContent()
                                         <td>9</td>
                                         <td>Will Work on modals, popups, sweet-alert, toast, select2, choosen</td>
                                         <td>Will Work on modals, popups, sweet-alert, toast, select2, choosen</td>
-                                        <td>Planned</td>
+                                        <td><span className="text-danger">Planned</span></td>
                                         <td>
                                             🤫
                                         </td>

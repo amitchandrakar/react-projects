@@ -19,11 +19,25 @@ export function Index()
     const [users, setUsers] = useState([]);
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
     const MySwal = withReactContent(Swal);
     const history = useHistory();
     const { SearchBar, ClearSearchButton } = Search;
     const { ExportCSVButton } = CSVExport;
+
+    const [userData, setUserData] = useState({
+        name: "",
+        username: "",
+        email: "", 
+        phone: ""
+    });
+
+    const { name, username, email, phone } = userData;
+
+    const handleShow = async id => {
+        let result = await axios.get(`${Constants.api_base_url}/users/${id}`);
+        setUserData(result.data);
+        setShow(true);
+    }
 
     const loadUsers = async () => {
         const result = await axios.get(`${Constants.api_base_url}/users`);
@@ -37,7 +51,7 @@ export function Index()
 
     const actionsFormatter = (cell, row, rowIndex, formatExtraData) => {
         return <>
-            <Button className="mr-2" variant="outline-success" onClick={handleShow}>Show </Button>
+            <Button className="mr-2" variant="outline-success" onClick={() => handleShow(row.id) }>Show </Button>
             <Button className="mr-2" variant="outline-primary" onClick={ () => history.push(`/edit/${row.id}`) }>Edit</Button>
             <Button variant="outline-danger" onClick={() => handleDelete(row.id)}>Delete</Button>
         </>
@@ -128,16 +142,32 @@ export function Index()
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                <Modal.Title>Modal heading</Modal.Title>
+                    <Modal.Title>View User</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                <Modal.Body>
+                    <Container>
+                        <Row className="mt-2">
+                            <Col>Name</Col>
+                            <Col>{name}</Col>
+                        </Row>
+                        <Row className="mt-2">
+                            <Col>Username</Col>
+                            <Col>{username}</Col>
+                        </Row>
+                        <Row className="mt-2">
+                            <Col>Email Id</Col>
+                            <Col>{email}</Col>
+                        </Row>
+                        <Row className="mt-2">
+                            <Col>Contact</Col>
+                            <Col>{phone}</Col>
+                        </Row>
+                    </Container>
+                </Modal.Body>
                 <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                    Close
-                </Button>
-                <Button variant="primary" onClick={handleClose}>
-                    Save Changes
-                </Button>
+                    <Button variant="secondary" onClick={handleClose}>
+                        Close
+                    </Button>
                 </Modal.Footer>
             </Modal>
 
