@@ -28,5 +28,37 @@
       "phone": "8",
       "id": 34
     }
+  ],
+  "budgets": [
+    {
+      "title": "Why is that? And is there a way to declare a number of constants in one place, and define them in another? Apart from bound declaration & definition.",
+      "amount": "5000",
+      "date": "2022-10-09",
+      "id": 1
+    },
+    {
+      "title": "I want to parse the following string with moment.js 2014-02-27T10:00:00 and output day month year. I have been reading the docs but without success",
+      "amount": "800",
+      "date": "2019-12-11",
+      "id": 2
+    },
+    {
+      "title": "This is sample title. This is sample title. This is sample title. This is sample title. This is sample title. This is sample title. This is sample title. This is sample title. ",
+      "amount": "800",
+      "date": "2020-12-11",
+      "id": 3
+    },
+    {
+      "title": "This is sample title. This is sample title. This is sample title. This is sample title. This is sample title. This is sample title. This is sample title. This is sample title.",
+      "amount": "890",
+      "date": "2021-12-20",
+      "id": 4
+    },
+    {
+      "title": "That's the truth, no need for moment.js if you have a ISO date string... You could also use Date.parse to be more clear that you're working with ISO strings ",
+      "amount": "111",
+      "date": "2023-01-05",
+      "id": 5
+    }
   ]
 }

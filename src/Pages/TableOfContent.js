@@ -77,7 +77,7 @@ function TableOfContent()
                                         <td>4</td>
                                         <td>Budget App</td>
                                         <td>I'm storing date, price and description here</td>
-                                        <td><span className="text-warning">In Progress</span></td>
+                                        <td><span className="text-success">Completed</span></td>
                                         <td>
                                             3/10
                                         </td>
@@ -129,7 +129,7 @@ function TableOfContent()
                                     </tr>
                                     <tr>
                                         <td>8</td>
-                                        <td>Login & Register forms with validation</td>
+                                        <td>Form validation using Formik & Yup</td>
                                         <td>It will be same as real one</td>
                                         <td><span className="text-danger">Planned</span></td>
                                         <td>
